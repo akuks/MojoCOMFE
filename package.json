@@ -1,0 +1,30 @@
+{
+  "name": "MojoCom-FE",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "watch:tailwind": "postcss public/css/tailwind.css -o public/css/index.css -w",
+    "build": "rollup -c",
+    "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
+    "start": "sirv public --no-clear --single --dev --port 5000 --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "autoprefixer": "^9.8.8",
+    "concurrently": "^6.4.0",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^7.1.2",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "dependencies": {
+    "postcss": "^7",
+    "sirv-cli": "^1.0.0"
+  }
+}
