@@ -1,6 +1,6 @@
 <script>
-    import DefaultRound from "../buttons/DefaultRound.svelte";
-    import DefaultButton from "../buttons/DefaultButton.svelte";
+    import DefaultRound from "../Buttons/DefaultRound.svelte";
+    import DefaultButton from "../Buttons/DefaultButton.svelte";
 </script>
 
 <DefaultButton>Create Post</DefaultButton>

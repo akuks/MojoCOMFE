@@ -1,5 +1,5 @@
 <script>
-    import DefaultButton from "./buttons/DefaultButton.svelte";
+    import DefaultButton from "./Buttons/DefaultButton.svelte";
 </script>
 
 <span class="px-4 py-2 rounded text-gray-600 hover:bg-blue-100 hover:underline">
