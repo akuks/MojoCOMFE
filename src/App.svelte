@@ -1,31 +1,16 @@
 <script>
-	export let name;
-	name="Ashutosh"
+	import Logo from "./components/Logo.svelte";
+	import Search from "./components/Search.svelte";
+	import NavBar from "./components/NavBar.svelte";
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit1 the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learns how to build Svelte apps.</p>
+	<header class="fixed top-0 left-0 w-full bg-white border-b">
+		<div class="container mx-auto flex items-center h-16">
+			<Logo />
+			<Search />
+			<NavBar />
+		</div>
+	</header>
 </main>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
