@@ -1,20 +1,17 @@
 <script>
-    import DefaultButton from "./buttons/DefaultButton.svelte";
-    import DefaultRound from "./buttons/DefaultRound.svelte";
-    import Profile from "./User/Profile.svelte";
+    import AfterLogin from "./User/AfterLogin.svelte";
+    import TopRight from "./TopRight.svelte";
+
+    let login = false
 </script>
 
 <div class="w-auto ml-auto flex items-center space-x-4 h-full">
 
-    <DefaultButton>Create Post</DefaultButton>
+    {#if login }
+        <AfterLogin />
+    {:else }
+        <TopRight />
+    {/if}
 
-    <DefaultRound>
-        <img src="https://s.svgbox.net/hero-outline.svg?ic=chat&fill=grey-700"  class="h-6 w-6" alt=""/>
-    </DefaultRound>
 
-    <DefaultRound>
-        <img src="https://s.svgbox.net/hero-outline.svg?ic=bell&fill=grey-700" class="h-6 w-6" alt=""/>
-    </DefaultRound>
-
-<!--    <Profile />-->
 </div>
