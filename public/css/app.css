@@ -1,0 +1,4 @@
+
+.search-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent !important;
+}
