@@ -1,16 +1,15 @@
 <script>
-	import Logo from "./components/Logo.svelte";
-	import Search from "./components/Search.svelte";
-	import NavBar from "./components/NavBar.svelte";
+	import AppHeader from "./components/AppHeader.svelte";
+	import Article from "./components/Article.svelte";
 </script>
 
-<main>
-	<header class="fixed top-0 left-0 w-full bg-white border-b">
-		<div class="container mx-auto flex items-center h-16">
-			<Logo />
-			<Search />
-			<NavBar />
+<main class="min-h-screen bg-gray-100" style="margin-top: 65px">
+	<section class="container mx-auto py-8">
+		<div class="grid grid-cols-4 gap-4">
+			<AppHeader />
+
+			<Article />
 		</div>
-	</header>
+	</section>
 </main>
 
