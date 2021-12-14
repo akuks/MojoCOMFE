@@ -1,4 +1,12 @@
+html {
+    font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+}
 
 .search-focus {
     @apply focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent !important;
+}
+
+.ml-local-10 {
+    margin-left: 10px;
 }
