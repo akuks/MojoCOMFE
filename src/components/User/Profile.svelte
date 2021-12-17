@@ -1,7 +1,7 @@
 <div class="relative h-full flex items-center" >
 
     <button class="rounded-full overflow-hidden focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-blue-800 focus:outline-none">
-        <img src="https://fayazz.co/fayaz.jpg" class="h-8 w-8" alt="Profile" />
+        <img src="/images/profile_default.png" class="h-8 w-8" alt="Profile" />
     </button>
 
     <transition
