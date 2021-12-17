@@ -21,9 +21,4 @@
 	</section>
 </main>
 
-<style>
-	html {
-		
-	}
-</style>
 
