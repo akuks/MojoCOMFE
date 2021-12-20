@@ -10,3 +10,4 @@ yarn.lock
 /package-lock.json
 .routify
 dist/
+src/pages/example
