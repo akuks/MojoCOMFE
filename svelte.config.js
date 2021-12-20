@@ -1,4 +1,9 @@
-import sveltePreprocess from 'svelte-preprocess';
-export default { preprocess: sveltePreprocess(
-    { postcss: true }
-    ) };
+const preprocess = require('svelte-preprocess');
+
+module.exports = {
+    disableDependencyReinclusion: ['@roxi/routify'],
+
+    preprocess: [
+        preprocess(),
+    ],
+};
